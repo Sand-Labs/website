@@ -1,0 +1,22 @@
+{{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+
+{{ range .Site.Params.custom_js -}}
+    <script src="{{ . | absURL }}"></script>
+{{- end }}
+
+<script src="https://kit.fontawesome.com/dfde3f60e0.js" crossorigin="anonymous"></script>
+
+<div class='header header-absolute'>
+  <div class="container">
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}"><img alt="Figurit Homepage" src="{{ .Site.BaseURL }}images/logos/logo2/logo-transparent.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="{{ .Site.BaseURL }}"><img alt="Figurit Homepage" src="{{ .Site.BaseURL }}images/logos/logo/logo-transparent.svg" /></a>
+    </div>
+    {{ partial "main-menu.html" . }}
+    {{ partial "hamburger.html" . }}
+  </div>
+</div>

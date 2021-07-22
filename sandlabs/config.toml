@@ -1,0 +1,77 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "SandLabs"
+themesDir = "themes"
+theme = ["hugo-chart", "hugo-social-metadata", "hugo-hero-theme", "hugo-cite"]
+assetDir = "static"
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+[params]
+  google_analytics_id=""
+  custom_css = [
+      "styles/custom.css",
+      "https://unicons.iconscout.com/release/v4.0.0/css/thinline.css",
+      "https://unicons.iconscout.com/release/v4.0.0/css/solid.css",
+      "https://unicons.iconscout.com/release/v4.0.0/css/line.css",
+      "https://unpkg.com/feather-icons",
+      "https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"
+  ]
+  custom_js = [
+      "https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js",
+      "https://cdn.jsdelivr.net/npm/citation-js@0.4.0-7",
+      "https://kit.fontawesome.com/dfde3f60e0.js"
+  ]
+
+  description = "Unlocking Blockchain Insights via Data Scientific Means"
+  keywords = "blockchain, data science, cryptocurrency, crypto, data, data analytics, cryptography, data analysis, blog, decentralization"
+  twitterUsername = "@SandLabs_"
+  socialImage = "images/logos/logo2/logo-transparent.png"
+
+  [params.homepage_meta_tags]
+    meta_description = "a description of your website."
+    meta_og_title = "My Theme"
+    meta_og_type = "website"
+    meta_og_url = "https://www.mywebsite.com"
+    meta_og_image = "https://www.mywebsite.com/images/tn.png"
+    meta_og_description = "a description of your website."
+    meta_twitter_card = "summary"
+    meta_twitter_site = "@SandLabs_"
+    meta_twitter_creator = "@wyattowalsh"
+
+[[menu.main]]
+	name = "About"
+	url = "/about/"
+    weight = 1
+
+[[menu.main]]
+    name = "Community"
+    url = "/community/"
+    weight = 2
+
+
+[[menu.main]]
+    name = "Domains"
+    url = "/domains/"
+    weight = 3
+
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 4
+
+[[menu.main]]
+    name = "Timeline"
+    url = "/timeline/"
+    weight = 5
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"

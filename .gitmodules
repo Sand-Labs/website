@@ -1,0 +1,9 @@
+[submodule "sandlabs/themes/hugo-cite"]
+	path = sandlabs/themes/hugo-cite
+	url = https://github.com/loup-brun/hugo-cite.git
+[submodule "sandlabs/themes/hugo-social-metadata"]
+	path = sandlabs/themes/hugo-social-metadata
+	url = https://github.com/msfjarvis/hugo-social-metadata.git
+[submodule "sandlabs/themes/hugo-chart"]
+	path = sandlabs/themes/hugo-chart
+	url = https://github.com/Shen-Yu/hugo-chart.git

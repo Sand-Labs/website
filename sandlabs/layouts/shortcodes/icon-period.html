@@ -1,0 +1,4 @@
+{{ $size := .Get 0 }}
+{{ $src := print "images/icons/sandcastle/colorized-custom-2/icon-" $size  "x" $size ".png" }}
+{{- $image := resources.Get $src -}}
+<img class="icon-period" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
