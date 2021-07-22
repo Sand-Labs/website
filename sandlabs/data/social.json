@@ -1,12 +1,26 @@
 [
     {
-        "name": "Github",
-        "link": "https://github.com/zerostaticthemes/hugo-serif-theme",
-        "image": "social/github.svg"
+        "name": "GitHub",
+        "link": "https://github.com/Sand-Labs",
+        "image": "images/icons/github.svg",
+        "color": "#181717"
     },
     {
         "name": "Twitter",
-        "link": "https://twitter.com/zerostaticio",
-        "image": "social/twitter.svg"
+        "link": "https://twitter.com/SandLabs_",
+        "image": "images/icons/twitter.svg",
+        "color": "#1DA1F2"
+    },
+    {
+        "name": "Medium",
+        "link": "https://medium.com/sandlabs",
+        "image": "images/icons/medium.svg",
+        "color": "#000000"
+    },
+    {
+        "name": "Reddit",
+        "link": "https://www.reddit.com/r/SandLabs/",
+        "image": "images/icons/reddit.svg",
+        "color": "#FF4500"
     }
 ]
