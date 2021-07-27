@@ -10,7 +10,7 @@ assetDir = "static"
     min = "0.55.0"
 
 [params]
-  google_analytics_id=""
+  google_analytics_id= "G-9XL5PCBD6L"
   custom_css = [
       "styles/custom.css",
       "https://unicons.iconscout.com/release/v4.0.0/css/thinline.css",
