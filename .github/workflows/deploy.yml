@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master # Set a branch to deploy
+      - main # Set a branch to deploy
   pull_request:
   workflow_dispatch:
 
@@ -20,6 +20,7 @@ jobs:
         with:
           node-version: "16.5.0"
       
+      - run: npm update
       - run: npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
       
       - name: Setup Hugo
