@@ -26,7 +26,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
           
-      - run: npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+#       - run: npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
       
       - name: Build
         run: hugo --minify -s sandlabs
