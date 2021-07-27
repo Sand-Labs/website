@@ -20,7 +20,6 @@ jobs:
         with:
           node-version: "16.5.0"
       
-      - run: npm update
       - run: npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
       
       - name: Setup Hugo
