@@ -15,5 +15,16 @@
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@mdi/font": "^5.9.55",
+    "@mdi/js": "^5.9.55",
+    "@mdi/react": "^1.5.0",
+    "@mdi/svg": "^5.9.55",
+    "citation-js": "^0.5.1",
+    "hugulp": "^2.0.6",
+    "medium-2-md": "^0.6.0",
+    "react-icons": "^4.2.0"
   }
 }
