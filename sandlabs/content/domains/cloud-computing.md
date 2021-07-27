@@ -1,8 +1,8 @@
 ---
 title: "Cloud Computing"
+summary: "For all of our research and development, cloud computing enables us to embrace a serverless architecture, always ready to deploy and scale up"
 date: 2018-11-28T15:15:34+10:00
-fa: fas fa-cloud
-color: primary
+icon: "images/icons/cloud.svg"
 featured: true
 draft: false
 weight: 3

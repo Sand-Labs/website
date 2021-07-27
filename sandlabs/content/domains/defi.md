@@ -1,5 +1,6 @@
 ---
-title: "Decentralized Finance"
+title: "Decentralized Finance (DeFi)"
+summary: "We are collecting DeFi data so we can make implementations such as automated market makers, quantitative finance investment algorithms, and more"
 date: 2018-11-28T15:15:26+10:00
 icon: "images/icons/defi.svg"
 featured: true

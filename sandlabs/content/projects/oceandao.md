@@ -1,5 +1,7 @@
 ---
 title: 'OceanDAO Grant Analysis'
+summary: "Analysis of the OceanDAO, especially with regards to its grant program"
+icon: "images/OCEAN/icon.png"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true

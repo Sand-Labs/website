@@ -1,17 +1,27 @@
-<div class="service service-summary">
-  {{ if .Params.icon }}
-  <div class="service-image">
-    <img src="{{ .Site.BaseURL }}{{ .Params.icon }}"/>
-  </div>
-  {{ else if  .Params.fa }}
-    <div class="service-image text-4xl text-{{ .Params.color }}">
-       <i class="{{ .Params.fa }}"></i>
-    </div>
-  {{ end }}
-  <div class="service-content">
-    <h2 class="service-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h2>
-    {{ .Content | truncate 120 "..." }}
-  </div>
+<div class="m-4 p-4">
+	<div class="flex flex-col w-full h-full">
+		{{ if .Params.icon }}
+		<div
+			class="
+				flex-auto
+				min-w-full
+				w-full
+				h-full
+				min-h-full
+				bg-no-repeat bg-contain
+				p-6
+				mb-1
+			"
+			style="background-image: url({{ .Site.BaseURL }}{{ .Params.icon }}); background-color: white;"
+		></div>
+		{{ end }}
+		<div class="flex-auto h-full">
+			<h2 class="font-extrabold text-xl">
+				<!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
+				{{ .Title }}
+			</h2>
+			<p class="text-base">{{ .Params.summary }}</p>
+			<!-- {{ .Content | truncate 120 "..." }} -->
+		</div>
+	</div>
 </div>

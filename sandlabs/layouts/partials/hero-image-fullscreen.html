@@ -1,20 +1,41 @@
-
-<div class="hero-image hero-image-fullscreen" style="background-image: url('{{ .background | relURL }}');">
-    <div class="container ">
-      <div class="hero-text">
-        <span class="hero-section">{{ .section }}</span>
-        <h1 class="hero-fs-header">{{ .heading }}</h1>
-        <p class="hero-fs-par">{{ .subheading }}</p>
-      </div>
-      <div class="hero-down">
-        <a href="#home">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 898.75 533.751" transform="matrix(.69 0 0 .69 15.5 15.5)" fill="#fff">
-                <path d="M224.687 309.061L0 84.372l42.186-42.186L84.372 0l182.815 182.811L450 365.622l182.5-182.496L815 .63l41.874 41.874L898.75 84.38 674.062 309.065 449.373 533.751 224.687 309.06z"/>
-            </svg>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  {{ .Site.BaseURL }}
+<div
+	class="hero-image hero-image-fullscreen"
+	style="background-image: url('{{ .background | relURL }}');"
+>
+	<div class="container w-full">
+		<div
+			class="relative text-left subpixel-antialiased absolute"
+			style="top: -20vh"
+		>
+			<span class="hero-section">{{ .section }}</span>
+			<h1
+				class="text-8xl text-primary font-black tracking-tighter leading-tight"
+			>
+				{{ .heading }}
+			</h1>
+			<p class="text-3xl text-Accent">{{ .subheading }}</p>
+		</div>
+		<div class="absolute bottom-24 self-center">
+			<a href="#about">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					width="10vh"
+					height="10vh"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 898.75 533.751"
+						transform="matrix(.69 0 0 .69 15.5 15.5)"
+						fill="#fff"
+					>
+						<path
+							d="M224.687 309.061L0 84.372l42.186-42.186L84.372 0l182.815 182.811L450 365.622l182.5-182.496L815 .63l41.874 41.874L898.75 84.38 674.062 309.065 449.373 533.751 224.687 309.06z"
+						/>
+					</svg>
+				</svg>
+			</a>
+		</div>
+	</div>
+</div>
+{{ .Site.BaseURL }}

@@ -1,7 +1,8 @@
 ---
 title: "Blockchain-based Smart Contracts"
+summary: "Smart contracts enable new frontiers in decentralized logic execution. We both develop our own smart contracts, as well as analyze industry-wide deployments of smart contracts"
 date: 2018-11-18T12:33:46+10:00
-icon: "images/icons/smart-contract.svg"
+icon: "images/icons/sc.svg"
 draft: false
 featured: true
 weight: 1

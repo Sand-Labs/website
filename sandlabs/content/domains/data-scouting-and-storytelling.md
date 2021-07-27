@@ -1,7 +1,8 @@
 ---
 title: "Data Scouting & Storytelling"
+summary: "From finding the next best data source, to creating insightful, interactive visualizations, scouting and storying telling is hands-on data work"
 date: 2018-11-28T15:14:54+10:00
-icon: "images/icons/dss.svg"
+icon: "images/icons/dss-colorized.svg"
 featured: true
 draft: false
 weight: 4

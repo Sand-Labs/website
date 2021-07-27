@@ -1,10 +1,27 @@
-<div id="hero" class="hero-image hero-image-setheight" style="background-image: url('{{ .background | relURL }}')">
-  <div class="container ">
-    <div class="hero-text">
-      <span class="hero-section">{{ .section }}</span>
-      <h1 class="hero-sth-header">{{ .heading }}</h1>
-      <p class="hero-sth-par">{{ .subheading }}</p>
-    </div>
-  </div>
+<div
+	id="hero"
+	style="background-image: url('{{ .background | relURL }}'); height: 42vh;"
+	class="{{ .bgclasses }}"
+>
+	<div class="shadow-xl w-auto flex flex-col m-8">
+		<div
+			class="
+				grid grid-flow-cols
+				auto-cols-max
+				grid-cols-1 grid-rows-3
+				w-auto
+				gap-6
+				text-white
+			"
+		>
+			<span
+				class="flex-auto uppercase font-normal text-2xl italic bg-transparent"
+				>{{ .section }}</span
+			>
+			<h1 class="flex-auto text-6xl">{{ .heading }}</h1>
+			<p class="flex-auto hero-sth-par text-primary text-4xl bg-transparent">
+				{{ .subheading }}
+			</p>
+		</div>
+	</div>
 </div>
-  

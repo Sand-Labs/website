@@ -1,5 +1,7 @@
 ---
 title: 'SandLabs Blog'
+summary: "Introduced the SandLabs Blog on Medium!"
+icon: "images/steven-van-elk-x_wloeGrJGs-unsplash.png"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true

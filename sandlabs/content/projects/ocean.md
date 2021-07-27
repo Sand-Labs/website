@@ -1,5 +1,7 @@
 ---
 title: 'Ocean Protocol & OCEAN Token Analysis'
+summary: "Analysis of the Ocean Protocol and its corresponding OCEAN token."
+icon: "images/OCEAN/icon.png"
 date: 2018-11-18T12:33:46+10:00
 draft: false
 featured: true

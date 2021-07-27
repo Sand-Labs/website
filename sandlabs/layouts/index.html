@@ -1,97 +1,185 @@
-{{ define "title" }}{{ .Site.Title }}{{ end}}
-{{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-home{{ end }}
-{{ define "header_classes" }}header-transparent{{ end }}
-
-{{ define "meta_tags" }}
-<meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
-<meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
-<meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
-<meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
-<meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
-<meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
-<meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
-<meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
-<meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
-{{ end }}
-
-{{ define "main" }}
-
-{{ partial "hero-image-fullscreen.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
-
-{{ $headless := .Site.GetPage "/homepage" }}
-{{ $reusablePages := $headless.Resources.ByType "page" }}
-{{ $reusablePages := sort $reusablePages ".Params.weight" }}
-
-
-{{ range first 1 $reusablePages }}
-<div id="home" class="backdrop-filter backdrop-blur-3xl strip bg-fixed bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
-  <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 text-center text-white">
-        <h2 id="about" class="text-4xl m-4 font-bold" style="scroll-margin-top: 14vh;">{{ .Title }}</h2>
-        {{ .Content }}
-        <div class="hero container max-w-screen-lg mx-auto p-4">
-           <img class="mx-auto" src="images/icons/sandcastle/colorized-custom-2/icon-128x128.png"/>
-        </div>
-        <a class="button button-white mx-4" href="{{ .Params.buttonLink | relURL }}" target="_blank" rel="noopener noreferrer">{{ .Params.button }}</a>
-         <a class="button button-white mx-4" href="#domains">Read about our domains of emphasis</a>
-      </div>
-    </div>
-  </div>
+{{ define "title" }}{{ .Site.Title }}{{ end}} {{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }} {{ define "header_classes"
+}}header-transparent{{ end }} {{ define "meta_tags" }}
+<meta
+	name="description"
+	content="{{ .Site.Params.homepage_meta_tags.meta_description }}"
+/>
+<meta
+	property="og:title"
+	content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}"
+/>
+<meta
+	property="og:type"
+	content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}"
+/>
+<meta
+	property="og:url"
+	content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}"
+/>
+<meta
+	property="og:image"
+	content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}"
+/>
+<meta
+	property="og:description"
+	content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}"
+/>
+<meta
+	name="twitter:card"
+	content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}"
+/>
+<meta
+	name="twitter:site"
+	content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}"
+/>
+<meta
+	name="twitter:creator"
+	content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}"
+/>
+{{ end }} {{ define "main" }}
+<a id="home"
+	>{{ partial "hero-image-fullscreen.html" (dict "background"
+	.Params.heroBackground "heading" .Params.heroHeading "subheading"
+	.Params.heroSubHeading "content" .)}}</a
+>
+{{ $headless := .Site.GetPage "/homepage" }} {{ $reusablePages :=
+$headless.Resources.ByType "page" }} {{ $reusablePages := sort $reusablePages
+".Params.weight" }} {{ range first 1 $reusablePages }}
+<div
+	id="home"
+	class="
+		backdrop-filter backdrop-blur-3xl
+		bg-fixed bg-cover bg-position-top bg-overlay
+	"
+	style='background-image: url("{{ .Params.background | relURL }}"); height: 120vh;'
+>
+	<div class="container pt-8 pb-8 pb-md-12 pt-md-12">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8 text-center text-white">
+				<h2
+					id="about"
+					class="text-3xl m-4 font-bold"
+					style="scroll-margin-top: 12vh"
+				>
+					{{ .Title }}
+				</h2>
+				{{ .Content }}
+				<div class="hero container max-w-screen-lg mx-auto p-4">
+					<img
+						class="mx-auto mb-6"
+						src="images/icons/sandcastle/colorized-custom-2/icon-128x128.png"
+					/>
+				</div>
+				<div>
+					<a
+						class="button button-white mx-4"
+						href="{{ .Params.buttonLink | relURL }}"
+						target="_blank"
+						rel="noopener noreferrer"
+						>{{ .Params.button }} <i class="fab fa-medium"></i
+					></a>
+					<a class="button button-white mx-4" href="#domains"
+						>Read about our domains of emphasis <i class="fas fa-globe"></i
+					></a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-{{ end }}
-
-{{ $domains := where (where .Site.RegularPages "Type" "domains") ".Params.featured" true }}
-{{if gt (len $domains) 0}}
-<div class="container pt-8 pb-8 pb-md-14 pt-md-14 h-3/4">
-  <div class="row justify-content-start">
-    <div class="col-12">
-      <h2 id="domains" class="text-center mb-8 mx-4 text-4xl font-bold underline">Domains of Emphasis</h2>
-    </div>
-    {{ range first 6 (sort $domains ".Params.weight") }}
-    <div class="col-12 col-md-4 mb-1">
-      {{ .Render "summary" }}
-    </div>
-    {{ end }}
-  </div>
+{{ end }} {{ $domains := where (where .Site.RegularPages "Type" "domains")
+".Params.featured" true }} {{if gt (len $domains) 0}}
+<div class="container pt-2 pb-8 pb-md-14 pt-md-2 h-screen mb-8">
+	<div class="row justify-content-start mt-44">
+		<div class="col-12">
+			<h2
+				id="domains"
+				style="scroll-margin-top: 20vh"
+				class="p-0 m-0 mx-6 text-4xl font-bold"
+			>
+				<u>Domains of Emphasis</u> <i class="fas fa-globe"></i>
+			</h2>
+		</div>
+		<div
+			class="
+				grid grid-flow-row
+				auto-rows-min
+				grid-cols-3 grid-rows-2
+				justify-items-center
+				w-auto
+				gap-2
+			"
+			style="height: 80vh"
+		>
+			{{ range first 6 (sort $domains ".Params.weight") }}
+			<div class="shadow-xl">{{ .Render "summary" }}</div>
+			{{ end }}
+		</div>
+	</div>
 </div>
-{{end}}
 
-{{ range first 1 (after 1 $reusablePages) }}
-<div id="home" class="strip bg-cover bg-position-top bg-overlay" style="background-image: url('{{ .Params.background | relURL }}');">
-  <div class="container pt-17 pb-17">
-    <div class="row">
-      <div class="col-12 col-md-6 offset-md-6">
-        <h2 id="community" style="scroll-margin-top: 14vh;" class="text-primary text-capitalize">{{ .Title }}</h2>
-        <p>{{ .Content }}</p>
-        <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
-      </div>
-    </div>
-  </div>
+{{end}} {{ range first 1 (after 1 $reusablePages) }}
+<div
+	id="home"
+	style="background-image: url('{{ .Params.background | relURL }}');"
+	class="bg-blend-soft-light bg-secondary bg-cover bg-overlay"
+>
+	<div class="container p-6">
+		<div class="">
+			<div class="">
+				<h2
+					id="community"
+					style="scroll-margin-top: 14vh"
+					class="
+						text-primary text-capitalize text-6xl
+						font-bold
+						p-4
+						tracking-tighter
+					"
+				>
+					{{ .Title }} <i class="fas fa-users"></i>
+				</h2>
+				<div class="text-white text-2xl">{{ .Content }}</div>
+			</div>
+		</div>
+	</div>
 </div>
-{{ end }}
 
-{{ $projects := where (where .Site.RegularPages "Type" "projects") ".Params.featured" true }}
-{{if gt (len $projects) 0}}
-<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
-  <div class="row justify-content-start">
-    <div class="col-12">
-      <h2 id="projects" style="scroll-margin-top: 14vh;" class="text-center mb-3">Our Projects</h2>
-    </div>
-    {{ range first 6 (sort $projects ".Params.weight") }}
-    <div class="col-12 col-md-4 mb-1">
-      {{ .Render "summary" }}
-    </div>
-    {{ end }}
-    <div class="col-12 text-center">
-      <a class="button button-primary" href="{{ .Site.BaseURL }}projects">View All Projects</a>
-    </div>
-  </div>
+{{ end }} {{ $projects := where (where .Site.RegularPages "Type" "projects")
+".Params.featured" true }} {{if gt (len $domains) 0}}
+<div class="bg-gradient-to-tr from-primary via-accent to-secondary">
+	<div class="container pt-2 pb-8 pb-md-14 pt-md-2 h-4/5">
+		<div class="row justify-content-start mt-44">
+			<div class="col-12">
+				<h2
+					id="projects"
+					style="scroll-margin-top: 20vh"
+					class="p-0 m-0 mx-6 text-4xl font-bold"
+				>
+					<u>Our Projects</u> <i class="fas fa-project-diagram"></i>
+				</h2>
+			</div>
+			<div
+				class="
+					grid grid-flow-row
+					auto-rows-min
+					grid-cols-3 grid-rows-1
+					justify-items-center
+					w-auto
+					gap-2
+				"
+				style="height: 50vh"
+			>
+				{{ range first 6 (sort $projects ".Params.weight") }}
+				<div class="shadow-xl">{{ .Render "summary" }}</div>
+				{{ end }}
+			</div>
+		</div>
+		<!-- <div class="flex-auto text-center mt-4">
+			<a class="button button-primary" href="{{ .Site.BaseURL }}projects"
+				>View All Projects</a
+			>
+		</div> -->
+	</div>
 </div>
-{{ end }}
-
-{{ end }}
-
-{{ define "footer_js" }}
-{{ end }}
+{{ end }} {{ end }} {{ define "footer_js" }} {{ end }}
