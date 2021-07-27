@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "SandLabs"
 themesDir = "themes"
-theme = ["hugo-chart", "hugo-social-metadata", "hugo-hero-theme", "hugo-cite"]
+theme = ["windytheme", "hugo-chart", "hugo-social-metadata", "hugo-hero-theme", "hugo-cite"]
 assetDir = "static"
 [module]
   [module.hugoVersion]
@@ -31,46 +31,30 @@ assetDir = "static"
   socialImage = "images/logos/logo2/logo-transparent.png"
 
   [params.homepage_meta_tags]
-    meta_description = "a description of your website."
-    meta_og_title = "My Theme"
+    meta_description = "Exploring blockchain with data science & software"
+    meta_og_title = "SandLabs"
     meta_og_type = "website"
-    meta_og_url = "https://www.mywebsite.com"
-    meta_og_image = "https://www.mywebsite.com/images/tn.png"
-    meta_og_description = "a description of your website."
+    meta_og_url = "https://www.sandlabs.co"
+    meta_og_image = "https://www.mywebsite.com/images/images/logos/logo2/logo-transparent.png"
+    meta_og_description = "Exploring blockchain with data science & software"
     meta_twitter_card = "summary"
     meta_twitter_site = "@SandLabs_"
     meta_twitter_creator = "@wyattowalsh"
 
 [[menu.main]]
 	name = "About"
-	url = "/about/"
+	url = "/#about"
     weight = 1
 
 [[menu.main]]
     name = "Community"
-    url = "/community/"
+    url = "/#community"
     weight = 2
 
-
 [[menu.main]]
-    name = "Domains"
-    url = "/domains/"
+    name = "Past Projects"
+    url = "/#projects/"
     weight = 3
-
-[[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 4
-
-[[menu.main]]
-    name = "Timeline"
-    url = "/timeline/"
-    weight = 5
-
-[[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 6
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"

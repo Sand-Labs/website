@@ -1,0 +1,40 @@
+{{ define "title" }}{{ .Site.Title }}{{ end}}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+{{ define "header_classes" }}header-transparent{{ end }}
+
+{{ define "meta_tags" }}
+  <meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_description }}" />
+  <meta property="og:title" content="{{ .Site.Params.homepage_meta_tags.meta_og_title }}" />
+  <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+  <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+  <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+  <meta property="og:description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
+  <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+  <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
+  <meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
+{{ end }}
+
+{{ define "main" }}
+  <div class="bg-cover bg-no-repeat h-screen" style="background-image: url('images/home/hero.png');">
+    <div class="container">
+      <div class="text-white">
+        <h1>heading</h1>
+        <p>paragraph</p>
+      </div>
+      <div class="">
+        <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 898.75 533.751" transform="matrix(.69 0 0 .69 15.5 15.5)" fill="#fff">
+                <path d="M224.687 309.061L0 84.372l42.186-42.186L84.372 0l182.815 182.811L450 365.622l182.5-182.496L815 .63l41.874 41.874L898.75 84.38 674.062 309.065 449.373 533.751 224.687 309.06z"/>
+            </svg>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  {{ .Content }}
+{{ end }}
+
+{{ define "secondary" }}
+{{ end }}

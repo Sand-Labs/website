@@ -7,7 +7,9 @@ heroSubHeading: "Blockchain and Data Science Nerds Questing For Helpful Data Sci
 heroBackground: "images/kelly-sikkema--1_RZL8BGBM-unsplash.png"
 ---
 
-<div>
+SandLabs was founded in 2021 with the goal to maximize blockchain technology's overall societal benefit. This can be achieved via many routes, however we will start this process by creating data scientific analyses across a variety of blockchain-related topics. by creating data scientific analyses in order to foster data-driven decision-making for software development
+
+<!-- <div>
 {{< content-strip-left "/pages/about" "content1" >}}
 </div>
 <div>
@@ -15,4 +17,4 @@ heroBackground: "images/kelly-sikkema--1_RZL8BGBM-unsplash.png"
 </div>
 <div>
 {{< content-strip-center "/pages/about" "content3" >}}
-</div>
+</div> -->

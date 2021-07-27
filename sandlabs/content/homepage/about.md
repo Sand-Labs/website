@@ -1,9 +1,9 @@
 ---
 title: "Limitless Possibilities"
-weight: 2
+weight: 1
 background: "images/khashayar-kouchpeydeh-1gT8RLvFKvE-unsplash.png"
-button: "Read More About SandLabs"
-buttonLink: "about"
+button: "Read More About SandLabs On Medium"
+buttonLink: "https://medium.com/sandlabs"
 resources:
   - src: ""
     title: ""

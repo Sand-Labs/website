@@ -1,86 +1,176 @@
 :root {
-  /* CSS HEX */
-  --air-superiority-blue: #6a9fb5ff;
-  --almond: #e7d9c8ff;
-  --blue-yonder: #5f7395ff;
-  --independence: #34435eff;
-  --cameo-pink: #e6b8c5ff;
-  --tan: #cfaf8cff;
-  --english-lavender: #b77b93ff;
+	/* CSS HEX */
+	--air-superiority-blue: #6a9fb5ff;
+	--almond: #e7d9c8ff;
+	--blue-yonder: #5f7395ff;
+	--independence: #34435eff;
+	--cameo-pink: #e6b8c5ff;
+	--tan: #cfaf8cff;
+	--english-lavender: #b77b93ff;
 
-  /* CSS HSL */
-  --air-superiority-blue: hsla(198, 34%, 56%, 1);
-  --almond: hsla(33, 39%, 85%, 1);
-  --blue-yonder: hsla(218, 22%, 48%, 1);
-  --independence: hsla(219, 29%, 29%, 1);
-  --cameo-pink: hsla(343, 48%, 81%, 1);
-  --tan: hsla(31, 41%, 68%, 1);
-  --english-lavender: hsla(336, 29%, 60%, 1);
+	/* CSS HSL */
+	--air-superiority-blue: hsla(198, 34%, 56%, 1);
+	--almond: hsla(33, 39%, 85%, 1);
+	--blue-yonder: hsla(218, 22%, 48%, 1);
+	--independence: hsla(219, 29%, 29%, 1);
+	--cameo-pink: hsla(343, 48%, 81%, 1);
+	--tan: hsla(31, 41%, 68%, 1);
+	--english-lavender: hsla(336, 29%, 60%, 1);
 
-  /* SCSS HEX */
-  $air-superiority-blue: #6a9fb5ff;
-  $almond: #e7d9c8ff;
-  $blue-yonder: #5f7395ff;
-  $independence: #34435eff;
-  $cameo-pink: #e6b8c5ff;
-  $tan: #cfaf8cff;
-  $english-lavender: #b77b93ff;
+	/* SCSS HEX */
+	$air-superiority-blue: #6a9fb5ff;
+	$almond: #e7d9c8ff;
+	$blue-yonder: #5f7395ff;
+	$independence: #34435eff;
+	$cameo-pink: #e6b8c5ff;
+	$tan: #cfaf8cff;
+	$english-lavender: #b77b93ff;
 
-  /* SCSS HSL */
-  $air-superiority-blue: hsla(198, 34%, 56%, 1);
-  $almond: hsla(33, 39%, 85%, 1);
-  $blue-yonder: hsla(218, 22%, 48%, 1);
-  $independence: hsla(219, 29%, 29%, 1);
-  $cameo-pink: hsla(343, 48%, 81%, 1);
-  $tan: hsla(31, 41%, 68%, 1);
-  $english-lavender: hsla(336, 29%, 60%, 1);
+	/* SCSS HSL */
+	$air-superiority-blue: hsla(198, 34%, 56%, 1);
+	$almond: hsla(33, 39%, 85%, 1);
+	$blue-yonder: hsla(218, 22%, 48%, 1);
+	$independence: hsla(219, 29%, 29%, 1);
+	$cameo-pink: hsla(343, 48%, 81%, 1);
+	$tan: hsla(31, 41%, 68%, 1);
+	$english-lavender: hsla(336, 29%, 60%, 1);
 
-  /* SCSS RGB */
-  $air-superiority-blue: rgba(106, 159, 181, 1);
-  $almond: rgba(231, 217, 200, 1);
-  $blue-yonder: rgba(95, 115, 149, 1);
-  $independence: rgba(52, 67, 94, 1);
-  $cameo-pink: rgba(230, 184, 197, 1);
-  $tan: rgba(207, 175, 140, 1);
-  $english-lavender: rgba(183, 123, 147, 1);
+	/* SCSS RGB */
+	$air-superiority-blue: rgba(106, 159, 181, 1);
+	$almond: rgba(231, 217, 200, 1);
+	$blue-yonder: rgba(95, 115, 149, 1);
+	$independence: rgba(52, 67, 94, 1);
+	$cameo-pink: rgba(230, 184, 197, 1);
+	$tan: rgba(207, 175, 140, 1);
+	$english-lavender: rgba(183, 123, 147, 1);
 
-  /* SCSS Gradient */
-  $gradient-top: linear-gradient(0deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-right: linear-gradient(90deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-bottom: linear-gradient(180deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-left: linear-gradient(270deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-top-right: linear-gradient(45deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-bottom-right: linear-gradient(135deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-top-left: linear-gradient(225deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-bottom-left: linear-gradient(315deg, #6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
-  $gradient-radial: radial-gradient(#6a9fb5ff, #e7d9c8ff, #5f7395ff, #34435eff, #e6b8c5ff, #cfaf8cff, #b77b93ff);
+	/* SCSS Gradient */
+	$gradient-top: linear-gradient(
+		0deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-right: linear-gradient(
+		90deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-bottom: linear-gradient(
+		180deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-left: linear-gradient(
+		270deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-top-right: linear-gradient(
+		45deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-bottom-right: linear-gradient(
+		135deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-top-left: linear-gradient(
+		225deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-bottom-left: linear-gradient(
+		315deg,
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
+	$gradient-radial: radial-gradient(
+		#6a9fb5ff,
+		#e7d9c8ff,
+		#5f7395ff,
+		#34435eff,
+		#e6b8c5ff,
+		#cfaf8cff,
+		#b77b93ff
+	);
 }
 
 .hero-fs-header {
-  color: var(--air-superiority-blue);
+	color: var(--air-superiority-blue);
 }
 
 .hero-fs-par {
-  color: var(--independence);
+	color: var(--independence);
 }
 
 .header {
-  height: 10vh;
+	height: 10vh;
 }
 
 .main-menu-item {
-  font-size: 1.8vh;
+	font-size: 1.8vh;
 }
 
 .hero-sth-header {
-  color: var(--almond);
+	color: var(--almond);
 }
 
 .hero-sth-par {
-  color: var(--air-superiority-blue);
+	color: var(--air-superiority-blue);
 }
 
 .hero-image-setheight {
-  background-position: relative;
-  background-position-y: -24vh;
+	background-position: relative;
+	background-position-y: -24vh;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 102px;
 }

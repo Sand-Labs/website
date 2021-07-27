@@ -1,0 +1,22 @@
+[
+    {
+        "name": "GitHub",
+        "link": "https://github.com/Sand-Labs",
+        "image": "images/icons/github.svg"
+    },
+    {
+        "name": "Twitter",
+        "link": "https://twitter.com/SandLabs_",
+        "image": "images/icons/twitter.svg"
+    },
+    {
+        "name": "Medium",
+        "link": "https://medium.com/sandlabs",
+        "image": "images/icons/medium.svg"
+    },
+    {
+        "name": "Reddit",
+        "link": "https://www.reddit.com/r/SandLabs/",
+        "image": "images/icons/reddit.svg"
+    }
+]
