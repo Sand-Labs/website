@@ -8,14 +8,23 @@
 
 <script src="https://kit.fontawesome.com/dfde3f60e0.js" crossorigin="anonymous"></script>
 
-<div class='header header-absolute header-sticky'>
-  <div class="container">
-    <div class="logo">
-      <a href="{{ .Site.BaseURL }}"><img alt="Figurit Homepage" src="{{ .Site.BaseURL }}images/logos/logo2/logo-transparent.svg" /></a>
-    </div>
-    <div class="logo-mobile">
-      <a href="{{ .Site.BaseURL }}"><img alt="Figurit Homepage" src="{{ .Site.BaseURL }}images/logos/logo/logo-transparent.svg" /></a>
-    </div>
+<div class="flex justify-between items-center shadow-lg bg-gradient-to-r from-primary to-secondary bg-opacity-100" style="height: 10vh;">
+  <div class="container flex-auto justify-between items-center justify-start">
+    <a href="{{ .Site.BaseURL }}">
+      <div class="flex flex-row">
+        <div class="logo">
+          <img alt="Figurit Homepage" src="{{ .Site.BaseURL }}images/logos/logo2/logo-transparent.svg" />
+        </div>
+        <div class="logo-mobile">
+          <img alt="Figurit Homepage" src="{{ .Site.BaseURL }}images/logos/logo/logo-transparent.svg" />
+        </div>
+        <div class="text-secondary text-3xl align-middle" style="margin-top: 5vh;">
+          SandLabs
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="p-4 flex-auto">
     {{ partial "main-menu.html" . }}
     {{ partial "hamburger.html" . }}
   </div>

@@ -25,13 +25,17 @@
 
 
 {{ range first 1 $reusablePages }}
-<div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
+<div id="home" class="backdrop-filter backdrop-blur-3xl strip bg-fixed bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 text-center text-white">
-        <h2 id="about">{{ .Title }}</h2>
-        <p>{{ .Content }}</p>
-        <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        <h2 id="about" class="text-4xl m-4 font-bold" style="scroll-margin-top: 14vh;">{{ .Title }}</h2>
+        {{ .Content }}
+        <div class="hero container max-w-screen-lg mx-auto p-4">
+           <img class="mx-auto" src="images/icons/sandcastle/colorized-custom-2/icon-128x128.png"/>
+        </div>
+        <a class="button button-white mx-4" href="{{ .Params.buttonLink | relURL }}" target="_blank" rel="noopener noreferrer">{{ .Params.button }}</a>
+         <a class="button button-white mx-4" href="#domains">Read about our domains of emphasis</a>
       </div>
     </div>
   </div>
@@ -40,19 +44,16 @@
 
 {{ $domains := where (where .Site.RegularPages "Type" "domains") ".Params.featured" true }}
 {{if gt (len $domains) 0}}
-<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14 h-3/4">
   <div class="row justify-content-start">
     <div class="col-12">
-      <h2 class="text-center mb-3">Our Domains of Emphasis</h2>
+      <h2 id="domains" class="text-center mb-8 mx-4 text-4xl font-bold underline">Domains of Emphasis</h2>
     </div>
     {{ range first 6 (sort $domains ".Params.weight") }}
     <div class="col-12 col-md-4 mb-1">
       {{ .Render "summary" }}
     </div>
     {{ end }}
-    <div class="col-12 text-center">
-      <a class="button button-primary" href="{{ .Site.BaseURL }}domains">View All Domains</a>
-    </div>
   </div>
 </div>
 {{end}}
@@ -62,10 +63,29 @@
   <div class="container pt-17 pb-17">
     <div class="row">
       <div class="col-12 col-md-6 offset-md-6">
-        <h2 class="text-primary text-capitalize">{{ .Title }}</h2>
+        <h2 id="community" style="scroll-margin-top: 14vh;" class="text-primary text-capitalize">{{ .Title }}</h2>
         <p>{{ .Content }}</p>
         <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
       </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ $projects := where (where .Site.RegularPages "Type" "projects") ".Params.featured" true }}
+{{if gt (len $projects) 0}}
+<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
+  <div class="row justify-content-start">
+    <div class="col-12">
+      <h2 id="projects" style="scroll-margin-top: 14vh;" class="text-center mb-3">Our Projects</h2>
+    </div>
+    {{ range first 6 (sort $projects ".Params.weight") }}
+    <div class="col-12 col-md-4 mb-1">
+      {{ .Render "summary" }}
+    </div>
+    {{ end }}
+    <div class="col-12 text-center">
+      <a class="button button-primary" href="{{ .Site.BaseURL }}projects">View All Projects</a>
     </div>
   </div>
 </div>

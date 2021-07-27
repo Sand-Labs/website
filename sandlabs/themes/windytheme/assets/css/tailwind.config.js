@@ -35,7 +35,7 @@ module.exports = {
   variants: {
     extend: {
       borderColor: ['focus-visible'],
-      opacity: ['disabled'],
+      boxShadow: ['active'],
     }
   }
 }

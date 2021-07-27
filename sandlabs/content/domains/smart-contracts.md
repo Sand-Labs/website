@@ -1,7 +1,7 @@
 ---
 title: "Blockchain-based Smart Contracts"
 date: 2018-11-18T12:33:46+10:00
-icon: "services/service-icon-1.png"
+icon: "images/icons/smart-contract.svg"
 draft: false
 featured: true
 weight: 1

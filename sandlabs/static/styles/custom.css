@@ -146,6 +146,7 @@
 
 .header {
 	height: 10vh;
+	font-size: 1.8vh;
 }
 
 .main-menu-item {
@@ -165,12 +166,49 @@
 	background-position-y: -24vh;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
+.service-summary {
+	display: flex;
+	align-items: flex-start;
+	height: 32vh;
+	.service-image {
+		flex: 0 0 40px;
+		margin-right: 10px;
+		img {
+			max-width: 100%;
+			height: auto;
+			width: 2.5rem;
+		}
+	}
+	.service-content {
+		flex: 1;
+		.service-title {
+			font-family: $font-family-heading;
+			font-size: 1.5rem;
+		}
+		p {
+			color: #666;
+			font-size: 0.9rem;
+			width: 90%;
+		}
+	}
 }
 
-.sticky + .content {
-	padding-top: 102px;
-}
+/* .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
+	height: 10vh;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+} */
+/* $air-superiority-blue: rgba(106, 159, 181, 1);
+	$almond: rgba(231, 217, 200, 1);
+	$blue-yonder: rgba(95, 115, 149, 1);
+	$independence: rgba(52, 67, 94, 1);
+	$cameo-pink: rgba(230, 184, 197, 1);
+	$tan: rgba(207, 175, 140, 1);
+	$english-lavender: rgba(183, 123, 147, 1); */

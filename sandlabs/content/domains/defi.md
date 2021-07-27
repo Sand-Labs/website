@@ -1,7 +1,7 @@
 ---
 title: "Decentralized Finance"
 date: 2018-11-28T15:15:26+10:00
-icon: "services/service-icon-3.png"
+icon: "images/icons/defi.svg"
 featured: true
 draft: false
 weight: 5

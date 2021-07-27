@@ -3,6 +3,10 @@
   <div class="service-image">
     <img src="{{ .Site.BaseURL }}{{ .Params.icon }}"/>
   </div>
+  {{ else if  .Params.fa }}
+    <div class="service-image text-4xl text-{{ .Params.color }}">
+       <i class="{{ .Params.fa }}"></i>
+    </div>
   {{ end }}
   <div class="service-content">
     <h2 class="service-title">
