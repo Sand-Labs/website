@@ -1,7 +1,7 @@
 ---
 title: "Past Projects"
 weight: 3
-background: "images/kaleidico-26MJGnCM0Wc-unsplash.png"
+background: "images/projects.png"
 button: "View All Projects"
 buttonLink: "projects"
 ---

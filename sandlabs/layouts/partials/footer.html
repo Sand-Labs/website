@@ -1,17 +1,15 @@
 <div class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 pt-0 mt-0">
 				<div class="footer-inner">
 					{{ if .Site.Data.social }}
 					<ul class="social">
 						{{ range .Site.Data.social }}
-						<li>
-							<a href="{{ .link }}" target="blank"
+						<li class="pb-2 transform hover:-rotate-12 hover:scale-150">
+							<a class="" href="{{ .link }}" target="blank"
 								><img
-									color="{{ .color }};"
-									width="20"
-									height="20"
+									class="w-12 h-12 transform hover:bg-primary"
 									src="{{ .image | relURL }}"
 									title="{{ .name }}"
 									alt="{{ .name }}"
@@ -20,12 +18,29 @@
 						{{ end }}
 					</ul>
 					{{ end }}
-					<ul class="footer-menu">
-						<li><a href="#home">Home</a></li>
+					<ul class="m-0 p-0">
+						<li
+							class="transform hover:rotate-12 hover:scale-150 hover:bg-primary"
+						>
+							<a href="#home">Home</a>
+						</li>
 						<!-- <li><a href="{{ .Site.BaseURL }}">Home</a></li> -->
-						<li><a href="mailto: admin@sandlabs.co">Contact</a></li>
+						<li
+							class="transform hover:rotate-12 hover:scale-150 hover:bg-primary"
+						>
+							<a href="mailto: admin@sandlabs.co">Contact</a>
+						</li>
 						<!-- <li><a href="{{ .Site.BaseURL }}contact">Contact</a></li> -->
-						<li class="copyright">© {{ now.Format "2006" }} {{.Site.Title}}</li>
+						<li
+							class="
+								transform
+								hover:rotate-12 hover:scale-150
+								font-bold
+								hover:bg-primary
+							"
+						>
+							© {{ now.Format "2006" }} {{.Site.Title}}
+						</li>
 					</ul>
 				</div>
 			</div>

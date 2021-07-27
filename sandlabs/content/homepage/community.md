@@ -1,7 +1,7 @@
 ---
 title: "Community"
 weight: 2
-background: "images/william-white-TZCppMjaOHU-unsplash-crunch.png"
+background: "images/community.png"
 button: "View All Projects"
 buttonLink: "projects"
 ---
