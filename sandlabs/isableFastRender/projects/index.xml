@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on SandLabs</title>
+    <link>//localhost:1313/projects/</link>
+    <description>Recent content in Projects on SandLabs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Feb 2018 11:52:18 +0700</lastBuildDate><atom:link href="//localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SandLabs Blog</title>
+      <link>//localhost:1313/projects/fall-plaza/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>//localhost:1313/projects/fall-plaza/</guid>
+      <description> Launch of the SandLabs Medium Blog!  </description>
+    </item>
+    
+    <item>
+      <title>OceanDAO Grant Analysis</title>
+      <link>//localhost:1313/projects/modern-hospital/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>//localhost:1313/projects/modern-hospital/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ocean Protocol &amp; OCEAN Token Analysis</title>
+      <link>//localhost:1313/projects/cargo-terminal/</link>
+      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      
+      <guid>//localhost:1313/projects/cargo-terminal/</guid>
+      <description> Connecting the Data Lakes of the World: The Ocean Protocol
+ </description>
+    </item>
+    
+  </channel>
+</rss>
