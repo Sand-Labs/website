@@ -1,4 +1,4 @@
-baseURL = "www.sandlabs.co"
+baseURL = "/"
 languageCode = "en-us"
 title = "SandLabs"
 themesDir = "themes"
