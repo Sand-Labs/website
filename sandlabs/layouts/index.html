@@ -172,7 +172,9 @@ $headless.Resources.ByType "page" }} {{ $reusablePages := sort $reusablePages
 				style="height: 50vh"
 			>
 				{{ range first 6 (sort $projects ".Params.weight") }}
-				<div class="shadow-xl">{{ .Render "summary" }}</div>
+				<div class="flex flex-col items-center shadow-xl">
+					{{ .Render "summary" }}
+				</div>
 				{{ end }}
 			</div>
 		</div>
