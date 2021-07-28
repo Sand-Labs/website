@@ -23,7 +23,6 @@
     "@mdi/react": "^1.5.0",
     "@mdi/svg": "^5.9.55",
     "citation-js": "^0.5.1",
-    "hugulp": "^2.0.6",
     "medium-2-md": "^0.6.0",
     "react-icons": "^4.2.0"
   }
