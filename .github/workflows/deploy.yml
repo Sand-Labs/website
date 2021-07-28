@@ -15,18 +15,19 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          
-#       - uses: actions/setup-node@v2
-#         with:
-#           node-version: "16.5.0"
-      
+ 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-          
-#       - run: npm install -D sass@latest tailwindcss@latest postcss@latest autoprefixer@latest
+      
+               
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: "16.5.0"
+      
+#       - run: npm install -D bootstrap@3 sass@latest tailwindcss@latest postcss@latest autoprefixer@latest
       
       - name: Build
         run: hugo --minify -s sandlabs
