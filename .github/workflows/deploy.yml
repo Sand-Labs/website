@@ -10,24 +10,36 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: [16.x]
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
- 
+    
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-               
-      - uses: actions/setup-node@v2
+
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
-          node-version: "16.5.0"
-      - run: sudo ln -s /usr/bin/nodejs /usr/bin/node
-      - run: npm config set ignore-scripts false
-      - run: cd sandlabs && npm install && cd ..
+          node-version: ${{ matrix.node-version }}
+        run: npm install
+        
+#       - name: Setup Node.js    
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: "16.5.0"
+#         run:
+#       - run: sudo ln -s /usr/bin/nodejs /usr/bin/node
+#       - run: npm config set ignore-scripts false
+#       - run: cd sandlabs && npm install && cd ..
 #       - run: npm install -D bootstrap@3 sass@latest tailwindcss@latest postcss@latest autoprefixer@latest
       
       - name: Build
