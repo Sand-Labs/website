@@ -8,6 +8,16 @@ assetDir = "static"
   [module.hugoVersion]
     extended = true
     min = "0.55.0"
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = false
+    path = "hugo-hero-theme/assets/"
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = false
+    path = "windytheme/assets/"
 
 [params]
   google_analytics_id= "G-9XL5PCBD6L"
