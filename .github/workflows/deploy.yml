@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "16.5.0"
-      - run: ln -s /usr/bin/nodejs /usr/bin/node
+      - run: sudo ln -s /usr/bin/nodejs /usr/bin/node
       - run: npm config set ignore-scripts false
       - run: cd sandlabs && npm install && cd ..
 #       - run: npm install -D bootstrap@3 sass@latest tailwindcss@latest postcss@latest autoprefixer@latest
