@@ -43,7 +43,7 @@ jobs:
 #       - run: npm install -D bootstrap@3 sass@latest tailwindcss@latest postcss@latest autoprefixer@latest
       
       - name: Build
-        run: hugo --minify -s sandlabs
+        run: cd sandlabs && hugo --minify -s .
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
