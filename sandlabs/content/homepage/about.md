@@ -1,7 +1,7 @@
 ---
 title: "Limitless Possibilities"
 weight: 1
-background: "images/about.png"
+background: "images/about.jpg"
 button: "Read More About SandLabs On Medium"
 buttonLink: "https://medium.com/sandlabs"
 resources:

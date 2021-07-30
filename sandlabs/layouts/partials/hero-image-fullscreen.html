@@ -5,17 +5,17 @@
 	<div class="container w-full">
 		<div
 			class="relative text-left subpixel-antialiased absolute"
-			style="top: -20vh"
+			style="top: -10vh"
 		>
 			<span class="hero-section">{{ .section }}</span>
-			<h1
-				class="text-8xl text-primary font-black tracking-tighter leading-tight"
+			<h1 id="heroHeading"
+				class="text-4xl md:text-6xl lg:text-8xl text-primary font-black tracking-tighter leading-tight"
 			>
 				{{ .heading }}
 			</h1>
 			<p class="text-3xl text-Accent">{{ .subheading }}</p>
 		</div>
-		<div class="absolute self-center" style="bottom: 11.5rem">
+		<div class="animate-bounce absolute self-center" style="bottom: 12rem">
 			<a href="#about">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

@@ -9,43 +9,21 @@
 	crossorigin="anonymous"
 ></script>
 
-<div
-	class="
-		flex
-		justify-between
-		items-center
-		shadow-lg
-		bg-gradient-to-r
-		from-primary
-		to-secondary
-	"
-	style="height: 10vh"
->
-	<div class="container flex-auto justify-between items-center justify-start">
-		<a href="{{ .Site.BaseURL }}">
-			<div class="flex flex-row">
-				<div class="logo">
-					<img
-						alt="Figurit Homepage"
-						src="{{ .Site.BaseURL }}images/logos/logo2/logo-transparent.svg"
+<header class="sticky top-0 inline-flex w-screen justify-between bg-gradient-to-r from-primary to-secondary" style="height: 10vh;">
+			<a class="hover:bg-secondary" href="{{ .Site.BaseURL }}">
+				<ul class="h-full flex flex-row">
+					<li class="self-center w-max">
+							<img class="object-contain h-12 md:h-24 lg:h-36 py-1"
+						alt="SandLabs Homepage"
+						src="{{ .Site.BaseURL }}images/logos/logo-transparent.svg"
 					/>
-				</div>
-				<div class="logo-mobile">
-					<img
-						alt="Figurit Homepage"
-						src="{{ .Site.BaseURL }}images/logos/logo/logo-transparent.svg"
-					/>
-				</div>
-				<div
-					class="text-Secondary text-2xl align-middle font-black"
-					style="margin-top: 5vh"
-				>
-					SandLabs
-				</div>
-			</div>
-		</a>
-	</div>
-	<div class="p-4 flex-auto">
+					</li>
+					<li class="self-center justify-self-start">
+						<span class="text-xl max-w-full md:text-2xl lg:text-3xl font-extrabold tracking-tighter">{{ .Site.Title }}</span>
+					</li>
+				</ul>
+			</a>
+	<nav class="self-center mr-3">
 		{{ partial "main-menu.html" . }} {{ partial "hamburger.html" . }}
-	</div>
-</div>
+	</nav>
+</header>

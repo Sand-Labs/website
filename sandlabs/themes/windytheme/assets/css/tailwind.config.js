@@ -22,6 +22,13 @@ module.exports = {
       sans: ['Helvetica', 'Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
+    maxWidth: {
+      '1/4': '25%',
+      '1/3': '33.33%',
+      '1/2': '50%',
+      '2/3': '66.66%',
+      '3/4': '75%',
+     },
     extend: {
       spacing: {
         '128': '32rem',

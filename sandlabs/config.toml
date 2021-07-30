@@ -23,6 +23,8 @@ assetDir = "static"
   google_analytics_id= "G-9XL5PCBD6L"
   custom_css = [
       "styles/custom.css",
+      "styles/header.css",
+      "scss/palette.scss",
       "https://unicons.iconscout.com/release/v4.0.0/css/thinline.css",
       "https://unicons.iconscout.com/release/v4.0.0/css/solid.css",
       "https://unicons.iconscout.com/release/v4.0.0/css/line.css",
@@ -32,7 +34,8 @@ assetDir = "static"
   custom_js = [
       "https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js",
       "https://cdn.jsdelivr.net/npm/citation-js@0.4.0-7",
-      "https://kit.fontawesome.com/dfde3f60e0.js"
+      "https://kit.fontawesome.com/dfde3f60e0.js",
+      "js/color-changing-header.js"
   ]
 
   description = "Unlocking Blockchain Insights via Data Scientific Means"
@@ -53,8 +56,14 @@ assetDir = "static"
 
 [[menu.main]]
 	name = "About"
+  post = "fas fa-info-circle"
 	url = "/#about"
     weight = 1
+
+[[menu.main]]
+  name = "Blog"
+  post = "fas fa-pen"
+  url = "/"
 
 [[menu.main]]
     name = "Community"

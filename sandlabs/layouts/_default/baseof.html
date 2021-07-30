@@ -28,7 +28,7 @@
 
 	<body class='page {{ block "body_classes" . }}{{ end }}'>
 		{{ partial "main-menu-mobile.html" . }}
-		<div class="sticky top-0">{{ partial "header.html" . }}</div>
+		{{ partial "header.html" . }}
 		{{ block "main" . }} {{ end }}
 
 		<div class="sticky bottom-0">{{ partial "footer.html" . }}</div>
