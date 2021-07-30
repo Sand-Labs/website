@@ -1,0 +1,39 @@
+#about {
+  @apply items-center bg-no-repeat p-8 bg-cover bg-fixed w-full text-center;
+  height: 95vh;
+  top: 110vh;
+  background-image: url("/assets/lp/about.jpg");
+}
+
+.aboutHero {
+  @apply flex justify-around flex-col h-full;
+}
+
+.aboutTitle {
+  @apply text-6xl py-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.aboutPs {
+  @apply text-2xl font-bold py-4;
+}
+
+.aboutP {
+}
+
+.aboutCTA {
+  @apply  text-3xl font-extralight text-white py-4;
+}
+
+.aboutIcon {
+  @apply block shadow-inner mx-auto py-4;
+}
+
+.aboutIconImg {
+  @apply justify-self-center;
+}
+
+.aboutButtons {
+  @apply block mx-auto text-white flex flex-row py-4;
+}

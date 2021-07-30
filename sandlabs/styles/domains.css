@@ -1,0 +1,37 @@
+#domains {
+  @apply bg-no-repeat p-8 bg-cover bg-fixed w-full bg-gradient-to-tr from-gray-100 via-white bg-opacity-40;
+  height: 85vh;
+  top: 110vh;
+}
+
+.domainsTitle {
+  @apply text-5xl font-extralight underline;
+  top: 180vh;
+  letter-spacing: -0.02em;
+}
+
+.domainsGrid {
+  @apply grid grid-cols-3 grid-rows-2 gap-4 justify-items-end p-4 m-4;
+  height: 75vh;
+}
+.domainCard {
+  @apply transform filter delay-200 shadow-xl m-4 p-4 hover:bg-accent ;
+  @apply hover:scale-105;
+  @apply hover:shadow-2xl;
+  @apply hover:bg-opacity-20;
+
+}
+
+.domainIcon {
+  height: 52%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cartTitle {
+  @apply font-bold m-2 p-2 text-3xl;
+}
+.cardSummary {
+  @apply font-light text-sm tracking-wide;
+}
