@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function About() {
   return (
-    <section id="about" style={{"scroll-margin-top": ""}}>
+    <section id="about" style={{"scrollMarginTop": ""}}>
       <div className="aboutHero">
          <div className="aboutTitle">
             <h1>
@@ -17,18 +17,18 @@ export default function About() {
           </p>
           <br />
           <p  className="aboutP">
-          As software entities, blockchains produce burgeoning datasets across a variety of subjects, all of which can be examined using programmatic and statistical methodologies. 
+          As software entities, blockchains produce burgeoning datasets across a variety of subjects, all of which can be examined using programmatic and statistical methodologies.
           </p>
-          <hr class="my-4"/>
+          <hr className="m-4 mt-8"/>
           </div>
           <div  className="aboutCTA">
           <h4>
-          Here at <span class="text-primary">SandLabs</span>, we peer through the lens of data science at blockchain-related topics to unearth deeper, more rich domain understandings to better realize societal benefit.
+          Here at <span className="text-primary">SandLabs</span>, we peer through the lens of data science at blockchain-related topics to unearth deeper, more rich domain understandings to better realize societal benefit.
           </h4>
           </div>
-          <div class="aboutIcon">
+          <div className="aboutIcon">
             <img
-              class="aboutIconImg"
+              className="aboutIconImg"
               src="assets/lp/icons/sandcastle/icon-128x128.png"/>
 				  </div>
         <div className="aboutButtons">

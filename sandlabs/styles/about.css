@@ -12,7 +12,6 @@
 .aboutTitle {
   @apply text-6xl py-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
   padding-top: 10vh;
-  padding-bottom: 10vh;
 }
 
 .aboutPs {
@@ -23,7 +22,7 @@
 }
 
 .aboutCTA {
-  @apply  text-3xl font-extralight text-white py-4;
+  @apply  text-3xl font-extralight text-white pb-4;
 }
 
 .aboutIcon {

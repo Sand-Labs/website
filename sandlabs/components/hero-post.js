@@ -12,17 +12,17 @@ export default function HeroPost({
   slug,
 }) {
   return (
-    <section>
-      <div className="mt-2 mb-8 md:mb-16">
+    <section className="rounded-none border-dashed border-4 px-8 mt-4 " style={{"height": "75vh", "margin-bottom": "2vh"}}>
+      <div className="mt-4 mb-24 md:mb-16 overflow-hidden" style={{"height": "50vh"}}>
         <CoverImage
           title={title}
           src={coverImage}
           slug={slug}
-          height={450}
-          width={1240}
+          height={250}
+          width={375}
         />
       </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-12 md:mb-28">
         <div>
           <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">

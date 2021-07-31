@@ -27,7 +27,7 @@ export default function Footer() {
                 href="/"
                 className="mx-3 bg-transparent hover:bg-accent hover:text-darker text-dark font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
               >
-                © <span class="font-extrabold">SandLabs</span> 2021
+                © <span className="font-extrabold">SandLabs</span> 2021
               </a>
               {/* <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}

@@ -17,3 +17,4 @@
 @import "./landing-hero.css";
 @import "./about.css";
 @import "./domains.css";
+html { scroll-behavior: smooth;}

@@ -5,7 +5,7 @@
 }
 
 .domainsTitle {
-  @apply text-5xl font-extralight underline;
+  @apply text-5xl text-darker font-extralight underline;
   top: 180vh;
   letter-spacing: -0.02em;
 }
