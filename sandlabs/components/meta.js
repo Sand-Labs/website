@@ -36,6 +36,12 @@ export default function Meta() {
         content={`SandLabs, exploring blockchain technology with data science and software`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XL5PCBD6L"></script>
+        <script dangerouslySetInnerHTML={{
+            __html: ` window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9XL5PCBD6L');`}}/>
     </Head>
   )
 }
