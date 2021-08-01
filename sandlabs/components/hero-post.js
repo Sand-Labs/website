@@ -12,7 +12,7 @@ export default function HeroPost({
   slug,
 }) {
   return (
-    <section className="rounded-none border-dashed border-4 px-8 mt-4 bg-primary bg-opacity-20" style={{"height": "56vh", "margin-bottom": "2vh"}}>
+    <section className="rounded-none border-dashed border-4 px-8 mt-4 bg-primary bg-opacity-20" style={{"height": "56vh", "marginBottom": "2vh"}}>
       <div className="mt-4 mb-12 md:mb-10 overflow-hidden" style={{"height": "37vh"}}>
         <CoverImage
           title={title}
