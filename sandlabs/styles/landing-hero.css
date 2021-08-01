@@ -19,7 +19,7 @@
 }
 .downArrow {
   bottom: 5vh;
-  @apply absolute object-center w-full;
+  @apply absolute object-center w-full transform animate-bounce  hover:scale-125;
 }
 /* .downNote{
   display: block;
@@ -32,10 +32,10 @@
   margin-left: auto;
   margin-right: auto;
   width: 8%;
-  @apply transform hover:scale-125 animate-bounce;
+  @apply transform animate-bounce  hover:scale-125;
 }
 @keyframes fadeIn{
-  0%{opacity:0;}  
+  0%{opacity:0;}
   50%{opacity:0.5;}
   100%{opacity:1;}
   }
