@@ -6,7 +6,7 @@
 }
 
 .landingTitle {
-  @apply subpixel-antialiased p-12 pt-48 md:p-24 lg:p-36;
+  @apply subpixel-antialiased px-12 pt-24  md:p-24 lg:p-36;
 }
 
 
