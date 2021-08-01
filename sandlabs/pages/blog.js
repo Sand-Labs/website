@@ -18,7 +18,7 @@ export default function Blog({ allPosts }) {
         </Head>
           <div className="container w-4/5 ml-auto mr-auto" style={{"min-height": "85vh"}}>
           <div className="flex flex-row" style={{"width": "80vh"}}>
-          <h1 className="my-4 py-2 text-3xl md:text-4xl lg:text-5xl ml-2 text-transparent bg-clip-text bg-gradient-to-tr from-Secondary via-Accent to-dark" style={{"fontFamily": "menlo", "letterSpacing": "-0.1em"}}>
+          <h1 className="my-4 py-2 text-xl md:text-2xl lg:text-5xl ml-2 text-transparent bg-clip-text bg-gradient-to-tr from-Secondary via-Accent to-dark" style={{"fontFamily": "menlo", "letterSpacing": "-0.1em"}}>
             SandLabs-Blog:Welcome visitor$ &thinsp;
           </h1>
           <Blinker/>

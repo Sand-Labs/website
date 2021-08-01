@@ -1,21 +1,17 @@
 #domains {
-  @apply bg-no-repeat p-8 bg-cover bg-fixed w-full bg-gradient-to-tr from-gray-100 via-white bg-opacity-40;
-  height: 85vh;
+  @apply bg-no-repeat p-4 md:p-6 lg:p-8 bg-cover bg-fixed w-full bg-gradient-to-tr from-gray-100 via-white bg-opacity-40;
   top: 110vh;
 }
 
 .domainsTitle {
-  @apply text-5xl text-darker font-extralight underline;
+  @apply text-xl md:text-3xl lg:text-5xl text-darker font-extralight underline;
   top: 180vh;
   letter-spacing: -0.02em;
 }
 
-.domainsGrid {
-  @apply grid grid-cols-3 grid-rows-2 gap-4 justify-items-end p-4 m-4;
-  height: 75vh;
-}
+
 .domainCard {
-  @apply transform filter delay-200 shadow-xl m-4 p-4 hover:bg-accent ;
+  @apply transform filter delay-200 shadow-xl p-4 hover:bg-accent ;
   @apply hover:scale-105;
   @apply hover:shadow-2xl;
   @apply hover:bg-opacity-20;
@@ -30,8 +26,27 @@
 }
 
 .cartTitle {
-  @apply font-bold m-2 p-2 text-3xl;
+  @apply font-bold p-2 text-xl md:text-2xl lg:text-3xl;
 }
 .cardSummary {
-  @apply font-light text-sm tracking-wide;
+  @apply font-light text-xs md:text-sm lg:text-sm tracking-wide;
+}
+
+@media (min-width: 375px) { 
+  .domainsGrid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2 gap-4 p-4 m-4;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .domainsGrid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2 gap-4 p-4 m-4;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .domainsGrid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2 gap-4 p-4 m-4;
+    height: 75vh;
+  }
 }

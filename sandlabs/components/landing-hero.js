@@ -1,5 +1,7 @@
+import Image from 'next/image'
+import trw from '../public/assets/lp/icons/trowel.svg'
+
 export default function LandingHero() {
-  
   return (
     <section>
       <div className="landingHero">
@@ -11,7 +13,9 @@ export default function LandingHero() {
             Exploring blockchain technology with data science and software
           </h2>
         </div>
-        <div className="downArrow"><a href="/#about"><img className="downImg" src="/assets/lp/icons/trowel.svg"></img></a></div>
+        <div className="w-48 mx-auto">
+          <div className="downArrow"><a href="/#about"><Image className="downImg" layout="responsive" src={trw}/></a></div>
+        </div>
       </div>
     </section>
   )

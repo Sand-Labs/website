@@ -1,7 +1,7 @@
 #about {
-  @apply items-center bg-no-repeat p-8 bg-cover bg-fixed w-full text-center;
+  @apply items-center bg-no-repeat bg-cover bg-fixed w-full text-center;
   height: 95vh;
-  top: 110vh;
+  top: 95vh;
   background-image: url("/assets/lp/about.jpg");
 }
 
@@ -10,23 +10,23 @@
 }
 
 .aboutTitle {
-  @apply text-6xl py-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
+  @apply text-6xl py-4 mt-8 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
   padding-top: 10vh;
 }
 
 .aboutPs {
-  @apply text-2xl font-bold py-4;
+  @apply  text-xs md:text-xl lg:text-2xl font-bold py-4;
 }
 
 .aboutP {
 }
 
 .aboutCTA {
-  @apply  text-3xl font-extralight text-white pb-4;
+  @apply  text-sm md:text-2xl lg:text-3xl font-extralight text-white pb-4;
 }
 
 .aboutIcon {
-  @apply block shadow-inner mx-auto py-4;
+  @apply w-1/4 lg:w-48 block shadow-inner mx-auto py-4;
 }
 
 .aboutIconImg {
@@ -34,5 +34,18 @@
 }
 
 .aboutButtons {
-  @apply block mx-auto text-white flex flex-row py-4;
+  @apply block mx-auto text-white text-xs md:text-base lg:text-base flex flex-row py-4;
+}
+
+@media (min-width: 375px) { 
+  .aboutTitle {
+    @apply text-xl py-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
+    padding-top: 10vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutTitle {
+    @apply text-4xl py-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
+    padding-top: 10vh;
+  }
 }

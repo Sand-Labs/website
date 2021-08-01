@@ -29,7 +29,7 @@ export default function About() {
           </h4>
           </div>
           <div className="aboutIcon">
-            <Image className="aboutIconImg" height={128} width={128} src={logo}/>
+            <Image layout="responsive" src={logo}/>
 				  </div>
         <div className="aboutButtons">
         <a
