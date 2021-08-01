@@ -2,11 +2,6 @@
   @apply flex justify-around flex-col h-full;
 }
 
-.aboutTitle {
-  @apply text-6xl py-4 mt-8 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
-  padding-top: 10vh;
-}
-
 .aboutPs {
   @apply  text-xs md:text-xl lg:text-2xl font-bold py-4;
 }
