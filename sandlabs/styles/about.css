@@ -28,7 +28,7 @@
 @media (min-width: 375px) { 
   #about {
     @apply items-center bg-no-repeat bg-cover bg-fixed w-full text-center;
-    height: auto;
+    height: 85vh;
     top: 95vh;
     background-image: url("/assets/lp/about.jpg");
   }
@@ -40,7 +40,7 @@
 @media (min-width: 768px) {
   #about {
     @apply items-center bg-no-repeat bg-cover bg-fixed w-full text-center;
-    height: auto;
+    height: 85vh;
     top: 95vh;
     background-image: url("/assets/lp/about.jpg");
   }
