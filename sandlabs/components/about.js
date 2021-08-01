@@ -6,7 +6,7 @@ import logo from "../public/assets/lp/icons/sandcastle/icon-256x256.png"
 
 export default function About() {
   return (
-    <section id="about" style={{"scrollMarginTop": ""}}>
+    <section id="about" style={{"scrollMarginTop": "10vh"}}>
       <div className="aboutHero">
          <div className="aboutTitle">
             <h1>
