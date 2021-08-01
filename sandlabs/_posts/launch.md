@@ -2,6 +2,7 @@
 title: 'Launch of the SandLabs Project'
 excerpt: 'SandLabs gets founded'
 coverImage: '/assets/blog/launch/cover.jpg'
+path: 'Project-Launch'
 date: '2020-07-31T05:35:07.322Z'
 author:
   name:  Wyatt Walsh

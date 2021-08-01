@@ -1,6 +1,8 @@
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faMedium } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
+import logo from "../public/assets/lp/icons/sandcastle/icon-256x256.png"
 
 export default function About() {
   return (
@@ -27,9 +29,7 @@ export default function About() {
           </h4>
           </div>
           <div className="aboutIcon">
-            <img
-              className="aboutIconImg"
-              src="assets/lp/icons/sandcastle/icon-128x128.png"/>
+            <Image className="aboutIconImg" height={128} width={128} src={logo}/>
 				  </div>
         <div className="aboutButtons">
         <a

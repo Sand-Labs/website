@@ -1,5 +1,9 @@
 import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import Image from 'next/image'
+import gh from '../public/assets/lp/icons/github-colorized.svg'
+import rdt from '../public/assets/lp/icons/reddit-colorized.svg'
+import med from '../public/assets/lp/icons/medium.svg'
+import twit from '../public/assets/lp/icons/twitter-colorized.svg'
 
 export default function Footer() {
     return (
@@ -7,13 +11,13 @@ export default function Footer() {
         <Container>
           <div className="py-4 flex flex-col lg:flex-row items-center justify-between" style={{height: "5vh"}}>
             <div className="py-4 w-32 lg:w-96 flex flex-col lg:flex-row items-center justify-between">
-            <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top-left hover:scale-150 hover:-rotate-12 transition delay-100 duration-400 ease-in-out hover:m-4  hover:rounded-xl" href="https://github.com/Sand-Labs"><img className="max-h-40 h-12 p-2" color="#181717" src="assets/lp/icons/github-colorized.svg"/>
+            <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top-left hover:scale-150 hover:-rotate-12 transition delay-100 duration-400 ease-in-out hover:m-4  hover:rounded-xl pt-3 p-2" href="https://github.com/Sand-Labs"><Image height={40} width={40} className="self-center" src={gh}/>
               </a>
-              <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top hover:scale-150 hover:rotate-12 transition delay-100 duration-400 ease-in-out hover:p-18 hover:rounded-xl" href="https://www.reddit.com/r/SandLabs/"><img className="max-h-40 h-12 p-2" color="#181717" src="assets/lp/icons/reddit-colorized.svg"/>
+              <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top hover:scale-150 hover:rotate-12 transition delay-100 duration-400 ease-in-out hover:p-18 hover:rounded-xl pt-3 p-2" href="https://www.reddit.com/r/SandLabs/"><Image height={40} width={40} className="self-center" src={rdt}/>
               </a>
-              <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top-left hover:scale-150 hover:-rotate-12 transition delay-100 duration-400 ease-in-out hover:m-4  hover:rounded-xl" href="https://medium.com/sandlabs"><img className="max-h-40 h-12 p-2" color="#181717" src="assets/lp/icons/medium.svg"/>
+              <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top-left hover:scale-150 hover:-rotate-12 transition delay-100 duration-400 ease-in-out hover:m-4  hover:rounded-xl pt-3 p-2" href="https://medium.com/sandlabs"><Image height={40} width={40} className="self-center" src={med}/>
               </a>
-              <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top hover:scale-150 hover:rotate-12 transition delay-100 duration-400 ease-in-out hover:p-18 hover:rounded-xl" href="https://twitter.com/SandLabs_"><img className="max-h-40 h-12 p-2" color="#181717" src="assets/lp/icons/twitter-colorized.svg"/>
+              <a target="_blank" rel="noopener noreferrer" className="transform hover:origin-top hover:scale-150 hover:rotate-12 transition delay-100 duration-400 ease-in-out hover:p-18 hover:rounded-xl pt-3 p-2" href="https://twitter.com/SandLabs_"><Image height={40} width={40} className="self-center" src={twit}/>
               </a>
             </div>
             <div className="flex flex-col lg:flex-row justify-end items-center lg:pl-4 lg:w-1/2">
