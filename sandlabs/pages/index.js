@@ -7,7 +7,7 @@ import LandingHero from '../components/landing-hero'
 import About from '../components/about'
 import Domains from '../components/domains'
 import { getAllPosts } from '../lib/api'
-
+import Head from 'next/head'
 
 export default function Index({ allPosts }) {
   const title = "SandLabs"
@@ -18,6 +18,9 @@ export default function Index({ allPosts }) {
   return (
     <>
       <Layout>
+        <Head>
+          <title>SandLabs:Home</title>
+        </Head>
           <LandingHero />
           <About />
           <Domains />

@@ -12,8 +12,8 @@ export default function PostPreview({
   slug,
 }) {
   return (
-    <div>
-      <div className="mb-5">
+    <div className="bg-accent bg-opacity-30 flex flex-col justify-start content-between">
+      <div className="mb-5 px-4 pt-4">
         <CoverImage
           slug={slug}
           title={title}
@@ -22,16 +22,16 @@ export default function PostPreview({
           width={556}
         />
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
+      <h3 className="text-3xl px-4 mb-3 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
       </h3>
-      <div className="text-lg mb-4">
+      <div className="text-lg mb-4 px-4 ">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
+      <p className="flex-grow text-lg leading-relaxed mb-4 px-4">{excerpt}</p>
+      <div className="px-4 pb-4 self-end w-full relative bottom-0 left-0 "><Avatar name={author.name} picture={author.picture} /></div>
     </div>
   )
 }

@@ -1,13 +1,13 @@
 ---
 title: 'Launch of the SandLabs Project'
 excerpt: 'SandLabs gets founded'
-coverImage: '/assets/lp/blog.jpg'
+coverImage: '/assets/blog/launch/cover.jpg'
 date: '2020-07-31T05:35:07.322Z'
 author:
   name:  Wyatt Walsh
-  picture: '/assets/blog/authors/jj.jpeg'
+  picture: '/assets/blog/authors/wyatt.jpg'
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/assets/blog/launch/cover.jpg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

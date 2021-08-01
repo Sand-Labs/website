@@ -1,0 +1,54 @@
+.blinker {
+  @apply self-center text-Accent h-8 md:h-9 lg:h-10 w-2 md:w-3 lg:w-4 text-2xl md:text-3xl lg:text-4xl;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+
+@keyframes "blink" {
+  from, to {
+    @apply bg-transparent;
+  }
+  50% {
+    @apply bg-gradient-to-tr from-Secondary via-Accent to-dark bg-opacity-50;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    @apply bg-transparent;
+  }
+  50% {
+    @apply bg-gradient-to-tr from-Secondary via-Accent to-dark bg-opacity-50;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    @apply bg-transparent;
+  }
+  50% {
+    @apply bg-gradient-to-tr from-Secondary via-Accent to-dark bg-opacity-50;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    @apply bg-transparent;
+  }
+  50% {
+    @apply bg-gradient-to-tr from-Secondary via-Accent to-dark bg-opacity-50;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    @apply bg-transparent;
+  }
+  50% {
+    @apply bg-gradient-to-tr from-Secondary via-Accent to-dark bg-opacity-50;
+  }
+}

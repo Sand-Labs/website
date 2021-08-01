@@ -17,4 +17,6 @@
 @import "./landing-hero.css";
 @import "./about.css";
 @import "./domains.css";
+@import "./blinker.css";
+
 html { scroll-behavior: smooth;}

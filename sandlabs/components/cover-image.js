@@ -19,7 +19,7 @@ export default function CoverImage({ title, src, slug, height, width }) {
     <div className="sm:mx-0">
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a aria-label={title}       style={{"top": "-18vh", "position": "relative"}}>{image}</a>
+          <a aria-label={title}       style={{"position": "relative"}}>{image}</a>
         </Link>
       ) : (
         image
