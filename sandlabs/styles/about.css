@@ -34,7 +34,7 @@
   }
   .aboutTitle {
     @apply text-xl py-4 font-extrabold text-Accent;
-    padding-top: 10vh;
+    margin-top: 10vh;
   }
 }
 @media (min-width: 768px) {
