@@ -4,7 +4,7 @@
 }
 
 .domainsTitle {
-  @apply text-xl md:text-3xl lg:text-5xl text-darker font-extralight underline;
+  @apply text-2xl md:text-3xl pt-4 pl-4 lg:text-5xl text-darker font-extralight underline;
   top: 180vh;
   letter-spacing: -0.02em;
 }

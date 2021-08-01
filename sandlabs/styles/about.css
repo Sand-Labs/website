@@ -34,7 +34,7 @@
   }
   .aboutTitle {
     @apply text-xl py-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-gray-500 to-accent hover:from-gray-700;
-    padding-top: 10vh;
+    padding-top: 14vh;
   }
 }
 @media (min-width: 768px) {
