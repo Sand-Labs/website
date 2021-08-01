@@ -33,8 +33,8 @@
     background-image: url("/assets/lp/about.jpg");
   }
   .aboutTitle {
-    @apply text-xl py-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-Accent to-Secondary hover:from-gray-700;
-    padding-top: 14vh;
+    @apply text-xl py-4 font-extrabold text-Accent;
+    padding-top: 10vh;
   }
 }
 @media (min-width: 768px) {
