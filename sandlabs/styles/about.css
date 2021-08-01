@@ -1,5 +1,5 @@
 .aboutHero {
-  @apply flex justify-around flex-col h-full;
+  @apply flex justify-around flex-col h-full m-6;
 }
 
 .aboutPs {
