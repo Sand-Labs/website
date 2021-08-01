@@ -1,5 +1,5 @@
 .aboutHero {
-  @apply flex justify-around flex-col h-full m-6;
+  @apply flex justify-around flex-col h-full;
 }
 
 .aboutPs {
@@ -34,7 +34,7 @@
   }
   .aboutTitle {
     @apply text-xl py-4 font-extrabold text-Accent;
-    margin-top: 10vh;
+    padding-top: 10vh;
   }
 }
 @media (min-width: 768px) {
