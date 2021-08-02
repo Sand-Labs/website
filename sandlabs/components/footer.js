@@ -7,7 +7,7 @@ import twit from '../public/assets/lp/icons/twitter-colorized.svg'
 
 export default function Footer() {
     return (
-      <footer className="sticky bottom-0 bg-gradient-to-r from-primary to-secondary w-screen" style={{height: "5vh"}}>
+      <footer className="sticky absolute bottom-0 bg-gradient-to-r from-primary to-secondary w-full" style={{height: "5vh"}}>
         <Container>
           <div className="flex flex-row items-center justify-between" style={{height: "5vh"}}>
             <div className="w-64 lg:w-96 flex flex-row items-center justify-between">

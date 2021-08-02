@@ -19,7 +19,7 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>SandLabs:Home</title>
+          <title>SandLabs-Home</title>
         </Head>
           <LandingHero />
           <About />
