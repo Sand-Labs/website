@@ -72,7 +72,7 @@ We hope big things are in store for the future of  <span class="text-primary fon
 <blockquote class="text-darker text-opacity-80 md:text-lg lg:text-xl p-4">
 <span class="inline">
 Make sure to stay on the lookout for the upcoming release of a few of our collected data assets as well as a couple blog posts explaining a bit about our projects</span>
-<img class="w-6 md:w-8 lg:w-10 inline no-wrap whitespace-nowrap" src="/assets/lp/icons/sandcastle/icon.svg"/>
+<img class="w-6 md:w-8 lg:w-10 h-6 md:h-8 lg:h-10 inline no-wrap whitespace-nowrap" src="/assets/lp/icons/sandcastle/icon.svg"/>
 </blockquote>
 
 
