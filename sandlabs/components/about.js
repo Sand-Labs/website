@@ -6,7 +6,7 @@ import logo from "../public/assets/lp/icons/sandcastle/icon-256x256.png"
 
 export default function About() {
   return (
-    <section id="about" style={{"scrollMarginTop": "10vh"}}>
+    <section id="about" style={{"scrollMarginTop": "0vh"}}>
       <div className="aboutHero">
          <div className="aboutTitle">
             <h2>
@@ -34,13 +34,13 @@ export default function About() {
         <div className="aboutButtons">
         <a
               href="/blog"
-              className="mx-3 bg-transparent hover:bg-accent hover:text-darker border border-black border-4 text-dark font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+              className="mx-1 md:mx-2 lg:mx-3 bg-transparent hover:bg-accent hover:text-darker border border-black border-4 text-dark font-bold py-3 px-4 md:px-8 lg:px-12 duration-200 transition-colors mb-6 lg:mb-0"
             >
                <FontAwesomeIcon icon={faMedium} style={{"height": "2.5rem"}}/>  Read Our Blog
             </a>
           <a
               href="/#domains"
-              className="mx-3 bg-transparent hover:bg-accent hover:text-darker border border-black text-dark border-4 font-extrabold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+              className="mx-1 md:mx-2 lg:mx-3 bg-transparent hover:bg-accent hover:text-darker border border-black border-4 text-dark font-bold py-3 px-4 md:px-8 lg:px-12 duration-200 transition-colors mb-6 lg:mb-0"
             >
              <FontAwesomeIcon icon={faGlobe} style={{"height": "2.5rem", "padding-bottom": "0.3rem"}}/>  View Our Domains of Emphasis 
             </a>

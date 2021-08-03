@@ -1,6 +1,6 @@
 ---
 title: 'Launch of the SandLabs Project'
-excerpt: 'SandLabs gets founded'
+excerpt: 'The SandLabs Project Begins! <br/> &nbsp; We are certainly in store for a wild ride 🐴'
 coverImage: '/assets/blog/launch/cover.jpg'
 path: 'Project-Launch'
 date: '2021-08-03T09:35:07.322Z'
@@ -19,30 +19,11 @@ We at  <span class="text-primary font-bold italic">SandLabs</span> hope to reali
 
 The  <span class="text-primary font-bold italic">SandLabs</span> Team currently consists of:
 
-<section>
-<div class="flex flex-col md:flex-row lg:flex-row w-full h-1/2">
-  <div class="flex flex-col content-between w-1/2 h-1/2 px-8 py-4 mr-2 bg-gradient-to-tr from-secondary to-accent bg-opacity-40">
-    <img class="w-2/3" src="/assets/blog/authors/wyatt.jpg"/>
-    <a target="_blank" rel="noopener noreferrer" class="mt-2 transform hover:underline hover:scale-110" href="https://wwalsh.io/"><span class="text-primary text-xl md:text-2xl lg:text-3xl font-bold">Wyatt Walsh</span></a>
-    <span class="text-Accent text-sm md:text-base lg:text-lg italic">Founder and Lead Developer</span>
-    <div class="flex flex-row justify-evenly mt-2 w-full">
-      <a target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="w-1/4 pr-2 transform hover:scale-125 hover:-rotate-12" href="https://github.com/wyattowalsh"><img src="/assets/lp/icons/github-colorized.svg"/></a>
-      <a target="_blank" rel="noopener noreferrer" class="w-1/4 px-2 transform hover:scale-125 hover:rotate-12" href="https://www.linkedin.com/in/wyattowalsh"><img src="/assets/lp/icons/linkedin-colorized.svg"/></a>
-      <a target="_blank" rel="noopener noreferrer" class="w-1/4 px-2 transform hover:scale-125 hover:-rotate-12" href="https://twitter.com/wyattowalsh"><img src="/assets/lp/icons/twitter-colorized.svg"/></a>
-      <a target="_blank" rel="noopener noreferrer" class="w-1/4 pl-2 transform hover:scale-125 hover:rotate-12" href="https://medium.com/@wyattowalsh"><img src="/assets/lp/icons/medium.svg"/></a>
-    </div>
-  </div>
-   <div class="flex flex-col w-1/2 px-8 py-4 ml-2 bg-gradient-to-tr from-secondary to-accent bg-opacity-40">
-    <img class="w-2/3" src="/assets/blog/authors/ryan.jpg"/>
-    <div class="my-2 transform hover:underline hover:scale-110"><span class="font-bold text-primary text-xl md:text-2xl lg:text-3xl">Ryan Epprecht</span></div>
-    <span class="text-Accent text-sm md:text-base lg:text-lg italic">Founder and Chief of Operations</span>
-    <div class="flex flex-row justify-evenly mt-2 w-full">
-      <a target="_blank" rel="noopener noreferrer" class="w-1/4 transform hover:scale-125 hover:-rotate-12" href="https://github.com/repprecht"><img src="/assets/lp/icons/github-colorized.svg"/></a>
-      <a target="_blank" rel="noopener noreferrer" class="w-1/4 transform hover:scale-125 hover:rotate-12" href="https://www.linkedin.com/in/ryan-epprecht-177a6a105/"><img src="/assets/lp/icons/linkedin-colorized.svg"/></a>
-    </div>
-  </div>
+<div>
+  <script src="../components/founders.js"></script>
 </div>
-</section>
+
+
 <h2 class="text-dark font-extrabold text-xl md:text-2xl lg:text-3xl">Our Vision</h2>
 
  <span class="text-primary font-bold italic">SandLabs</span> aims to explore the blockchain domain via a data scientific lens to generate new insights and make helpful contributions to the <code class="text-Accent">BlockchainxData</code> communities and beyond. The initial focus of our work will be data collection, extraction, and processing high quality data for future use. At first, this data will primarily come from social media and other API data sources and will focus on <code class="text-Accent">BlockchainxData</code>-related topics, but could possibly expand once we attain high pipeline functionality and automation capabilities. Upon significant successful data extraction, we plan to conduct analysis across our collected datasets in the hopes of generating helpful <code class="text-Accent">BlockchainxData</code> industry insights. 
