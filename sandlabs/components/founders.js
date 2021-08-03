@@ -94,7 +94,7 @@ export default function FoundersFeature() {
 				</div>
         <div className="flex flex-col justify-center content-between w-full h-full px-8 py-4 mx-4 mr-2 bg-gradient-to-tr from-secondary to-accent bg-opacity-40">
 					<div className="flex flex-col justify-evenly">
-						<div className="flex flex-row w-full h-full mx-2 justify-between items-center">
+						<div className="flex flex-row w-full h-full justify-between items-center">
 							<div className="h-full w-full">
 								<Image
 									width={256}
