@@ -25,7 +25,7 @@ The  <span class="text-primary font-bold italic">SandLabs</span> Team currently 
     <img class="w-2/3" src="/assets/blog/authors/wyatt.jpg"/>
     <a target="_blank" rel="noopener noreferrer" class="mt-2 transform hover:underline hover:scale-110" href="https://wwalsh.io/"><span class="text-primary text-xl md:text-2xl lg:text-3xl font-bold">Wyatt Walsh</span></a>
     <span class="text-Accent text-sm md:text-base lg:text-lg italic">Founder and Lead Developer</span>
-    <div class="flex flex-row justify-evenly mt-2">
+    <div class="flex flex-row justify-evenly mt-2 w-full">
       <a target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="w-1/4 pr-2 transform hover:scale-125 hover:-rotate-12" href="https://github.com/wyattowalsh"><img src="/assets/lp/icons/github-colorized.svg"/></a>
       <a target="_blank" rel="noopener noreferrer" class="w-1/4 px-2 transform hover:scale-125 hover:rotate-12" href="https://www.linkedin.com/in/wyattowalsh"><img src="/assets/lp/icons/linkedin-colorized.svg"/></a>
       <a target="_blank" rel="noopener noreferrer" class="w-1/4 px-2 transform hover:scale-125 hover:-rotate-12" href="https://twitter.com/wyattowalsh"><img src="/assets/lp/icons/twitter-colorized.svg"/></a>
@@ -36,7 +36,7 @@ The  <span class="text-primary font-bold italic">SandLabs</span> Team currently 
     <img class="w-2/3" src="/assets/blog/authors/ryan.jpg"/>
     <div class="my-2 transform hover:underline hover:scale-110"><span class="font-bold text-primary text-xl md:text-2xl lg:text-3xl">Ryan Epprecht</span></div>
     <span class="text-Accent text-sm md:text-base lg:text-lg italic">Founder and Chief of Operations</span>
-    <div class="flex flex-row justify-evenly mt-2">
+    <div class="flex flex-row justify-evenly mt-2 w-full">
       <a target="_blank" rel="noopener noreferrer" class="w-1/4 transform hover:scale-125 hover:-rotate-12" href="https://github.com/repprecht"><img src="/assets/lp/icons/github-colorized.svg"/></a>
       <a target="_blank" rel="noopener noreferrer" class="w-1/4 transform hover:scale-125 hover:rotate-12" href="https://www.linkedin.com/in/ryan-epprecht-177a6a105/"><img src="/assets/lp/icons/linkedin-colorized.svg"/></a>
     </div>
