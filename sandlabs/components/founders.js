@@ -139,7 +139,7 @@ export default function FoundersFeature() {
 								target="_blank"
 								rel="noopener noreferrer"
 								className="mt-2 transform hover:underline hover:scale-110"
-								href="https://wwalsh.io/"
+								href="https://www.linkedin.com/in/ryan-epprecht-177a6a105/"
 							>
 								<span className="text-primary text-2xl md:text-3xl lg:text-4xl font-bold">
 									Ryan Epprecht
