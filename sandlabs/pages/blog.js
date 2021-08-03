@@ -16,7 +16,9 @@ export default function Blog({ allPosts }) {
         <Head>
           <title>SandLabs:Blog</title>
         </Head>
-          <div className="flex flex-row">
+        <div>
+        <div style={{"height": "85vh"}}>
+        <div className="flex flex-row">
           <h1 className="my-4 py-2 text-xl md:text-2xl lg:text-5xl ml-2 text-transparent bg-clip-text bg-gradient-to-tr from-Secondary via-Accent to-dark" style={{"fontFamily": "menlo", "letterSpacing": "-0.1em"}}>
             SandLabs-Blog:Welcome visitor$ &thinsp;
           </h1>
@@ -32,7 +34,10 @@ export default function Blog({ allPosts }) {
               excerpt={heroPost.excerpt}
             />
           )}
+        </div>
+          <div className="flex-grow"></div>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        </div>
       </Layout>
     </>
   )

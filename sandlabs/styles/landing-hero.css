@@ -15,9 +15,9 @@
   margin-top: -2.5vh;
   @apply mt-0 md:mt-0 pt-0 md:pt-0 font-bold md:text-xl lg:text-2xl text-darker;
 }
-.downArrow {
+.downLink {
+  @apply mx-auto absolute  w-40 h-40 hover:scale-125;
   bottom: 5vh;
-  @apply absolute w-48 h-48 hover:scale-125;
 }
 /* .downNote{
   display: block;
@@ -28,8 +28,10 @@
 .downImg {
   margin-left: auto;
   margin-right: auto;
+  height: 250%;
   width: 8%;
   @apply transform animate-bounce;
+  
 }
 @keyframes fadeIn{
   0%{opacity:0;}

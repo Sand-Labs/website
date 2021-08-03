@@ -19,6 +19,7 @@ We at  <span class="text-primary font-bold italic">SandLabs</span> hope to reali
 
 The  <span class="text-primary font-bold italic">SandLabs</span> Team currently consists of:
 
+<section>
 <div class="flex flex-col md:flex-row lg:flex-row w-full h-1/2">
   <div class="flex flex-col content-between w-1/2 h-1/2 px-8 py-4 mr-2 bg-gradient-to-tr from-secondary to-accent bg-opacity-40">
     <img class="w-2/3" src="/assets/blog/authors/wyatt.jpg"/>
@@ -41,7 +42,7 @@ The  <span class="text-primary font-bold italic">SandLabs</span> Team currently 
     </div>
   </div>
 </div>
-
+</section>
 <h2 class="text-dark font-extrabold text-xl md:text-2xl lg:text-3xl">Our Vision</h2>
 
  <span class="text-primary font-bold italic">SandLabs</span> aims to explore the blockchain domain via a data scientific lens to generate new insights and make helpful contributions to the <code class="text-Accent">BlockchainxData</code> communities and beyond. The initial focus of our work will be data collection, extraction, and processing high quality data for future use. At first, this data will primarily come from social media and other API data sources and will focus on <code class="text-Accent">BlockchainxData</code>-related topics, but could possibly expand once we attain high pipeline functionality and automation capabilities. Upon significant successful data extraction, we plan to conduct analysis across our collected datasets in the hopes of generating helpful <code class="text-Accent">BlockchainxData</code> industry insights. 
