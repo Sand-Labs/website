@@ -9,9 +9,7 @@ export default function About() {
     <section id="about" style={{"scrollMarginTop": "0vh"}}>
       <div className="aboutHero">
          <div className="aboutTitle">
-            <h2>
-                Limitless Possibilities
-              </h2>
+              Limitless Possibilities
          </div>
           <div  className="aboutPs">
           <p  className="aboutP">

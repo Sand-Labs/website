@@ -10,7 +10,7 @@
 }
 
 .aboutTitle {
-  @apply font-extrabold font-merri tracking-wide text-2xl md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-bl  md:bg-gradient-to-tr from-Accent via-accent to-primary mx-auto py-4 md:py-6 lg:py-8;
+  @apply font-extrabold font-merri tracking-wide text-2xl md:text-4xl lg:text-6xl text-white md:text-transparent bg-clip-text bg-gradient-to-bl  md:bg-gradient-to-tr from-Accent via-accent to-primary mx-auto py-4 md:py-6 lg:py-8;
 }
 
 .aboutPs {
