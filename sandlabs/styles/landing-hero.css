@@ -9,9 +9,15 @@
   @apply subpixel-antialiased px-12 pt-24  md:p-24 lg:p-36;
 }
 
+.landingtitle {
+  @apply text-4xl md:text-6xl lg:text-8xl font-extrabold  tracking-tighter text-transparent  mb-0 pb-0 py-4 md:py-6 lg:py-8 bg-clip-text bg-gradient-to-r from-primary via-secondary to-Accent hover:to-dark;
+  animation:fadeIn 4s;
+  animation: shimmer 12s infinite;
+  animation-timing-function: ease-in-out;
+}
 
 .subtitle {
-  animation:fadeIn 5s;
+  animation:fadeIn 7s;
   margin-top: -2.5vh;
   @apply mt-0 md:mt-0 pt-0 md:pt-0 font-bold md:text-xl lg:text-2xl text-darker;
 }
@@ -19,38 +25,21 @@
   @apply mx-auto absolute  w-40 h-40 hover:scale-125;
   bottom: 5vh;
 }
-/* .downNote{
-  display: block;
-  bottom: 9vh;
-  left: 70vh;
-  @apply absolute
-} */
 .downImg {
   margin-left: auto;
   margin-right: auto;
   height: 250%;
   width: 8%;
   @apply transform animate-bounce;
-  
 }
 @keyframes fadeIn{
   0%{opacity:0;}
   50%{opacity:0.5;}
   100%{opacity:1;}
   }
-
-  @media (min-width: 375px) { 
-    .landingtitle {
-      @apply text-4xl font-extrabold  tracking-tighter text-transparent  mb-0 pb-0 bg-clip-text bg-gradient-to-r from-primary to-secondary hover:to-Accent;
+  @keyframes shimmer{
+    0%{@apply from-primary via-secondary to-Accent;}
+    25%{@apply from-secondary via-Accent to-primary;}
+    50%{@apply from-Accent via-primary to-secondary;}
+    100%{@apply from-primary via-secondary to-Accent;}
     }
-  }
-  @media (min-width: 768px) {
-    .landingtitle {
-      @apply text-6xl font-extrabold  tracking-tighter text-transparent  mb-0 pb-0 bg-clip-text bg-gradient-to-r from-primary to-secondary hover:to-Accent;
-    } 
-  }
-  @media (min-width: 1024px) {
-    .landingtitle {
-      @apply text-8xl font-extrabold  tracking-tighter text-transparent  mb-0 py-6 bg-clip-text bg-gradient-to-r from-primary to-secondary hover:to-Accent;
-    }
-  }

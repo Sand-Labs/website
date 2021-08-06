@@ -13,7 +13,7 @@ export default function LandingHero() {
             Exploring blockchain technology with data science and software
           </h2>
         </div>
-          <a href="/#about"><img className="transform animate-bounce h-1/4 w-auto absolute" style={{"bottom": "5vh", "margin-right": "auto", "margin-left": "auto", "left": 0,
+          <a href="/#about"><img className="transform animate-bounce h-1/4 w-auto absolute" style={{"bottom": "5vh", "marginRight": "auto", "marginLeft": "auto", "left": 0,
 "right": 0}} src="assets/lp/icons/trowel.svg"/></a>
       </div>
     </section>

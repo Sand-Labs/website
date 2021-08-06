@@ -1,4 +1,43 @@
+#about {
+  min-height: 95vh;
+  @apply h-auto w-full bg-no-repeat bg-cover bg-fixed;
+  background-image: url("/assets/lp/about.jpg");
+  padding-top: 10vh;
+}
 
+.aboutHero {
+  @apply flex flex-col text-center  justify-center w-5/6 mx-auto;
+}
+
+.aboutTitle {
+  @apply font-extrabold font-merri subpixel-antialiased tracking-wide text-2xl md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-tr from-Accent via-accent to-primary mx-auto py-4 md:py-6 lg:py-8;
+}
+
+.aboutPs {
+  @apply text-xl;
+
+}
+
+.aboutCTA {
+  @apply text-2xl text-white;
+
+}
+
+.aboutIcon {
+  @apply w-1/4 lg:w-1/6 h-auto mx-auto p-2 md:p-3 lg:p-4 shadow-inner;
+}
+
+.aboutButtons {
+  @apply  flex flex-row w-full h-auto justify-center;
+}
+.blogButton {
+  @apply h-36 lg:h-24 m-4 border border-black border-4  bg-transparent hover:bg-accent hover:text-darker text-dark font-bold py-3 px-4 md:px-8 lg:px-12 duration-200 transition-colors;
+}
+
+.domainButton {
+  @apply h-36 lg:h-24 m-4 border border-black border-4  bg-transparent hover:bg-accent hover:text-darker text-dark font-bold py-3 px-4 md:px-8 lg:px-12 duration-200 transition-colors;
+}
+/* 
  .aboutTitle {
   @apply font-extrabold font-merri subpixel-antialiased tracking-wide text-2xl md:text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-tr from-Accent via-accent to-primary;
   margin-top: 5vh;
@@ -74,4 +113,4 @@
   .aboutCTA {
     @apply  text-2xl font-light text-white pb-4;
   }
-}
+} */
